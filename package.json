@@ -1,0 +1,11 @@
+{
+    "name": "it.watermelon.tailwindcss",
+    "version": "0.0.1",
+    "displayName": "Unity TailwindCSS",
+    "author": {
+        "name": "Watermelon"
+    },
+    "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.0.1"
+    }
+  }
