@@ -109,7 +109,7 @@ public abstract class TailwindGenerator
 
     private static readonly string[] Selectors =
     {
-        null, "hover", "active", "inactive"
+        null, "hover", "active", "inactive", "focus", "disabled"
     };
 
     private static readonly Dictionary<string, Property> PropertiesMapping;
