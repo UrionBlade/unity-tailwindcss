@@ -49,7 +49,6 @@ public abstract class TailwindGenerator
         new() { Name = "fontWeight", ClassPrefix = "font", CssName = "font-weight" },
         new() { Name = "fontStyle", ClassPrefix = "font", CssName = "-unity-font-style" },
         new() { Name = "lineHeight", ClassPrefix = "leading", CssName = "line-height" },
-        new() { Name = "borderWidth", ClassPrefix = "border", CssName = "border-width" },
         new() { Name = "transformOrigin", ClassPrefix = "origin", CssName = "transform-origin" },
         new() { Name = "transitionDelay", ClassPrefix = "delay", CssName = "transition-delay" },
         new() { Name = "transitionDuration", ClassPrefix = "duration", CssName = "transition-duration" },
@@ -77,15 +76,35 @@ public abstract class TailwindGenerator
                 new Property { Name = "minWidth", ClassPrefix = "min-w", CssName = "min-width" },
                 new Property { Name = "minHeight", ClassPrefix = "min-h", CssName = "min-height" },
                 new Property { Name = "margin", ClassPrefix = "m", CssName = "margin" },
+                new Property { Name = "margin", ClassPrefix = "m-t", CssName = "margin-top" },
+                new Property { Name = "margin", ClassPrefix = "m-b", CssName = "margin-bottom" },
+                new Property { Name = "margin", ClassPrefix = "m-l", CssName = "margin-left" },
+                new Property { Name = "margin", ClassPrefix = "m-r", CssName = "margin-right" },
                 new Property { Name = "padding", ClassPrefix = "p", CssName = "padding" },
+                new Property { Name = "padding", ClassPrefix = "p-t", CssName = "padding-top" },
+                new Property { Name = "padding", ClassPrefix = "p-b", CssName = "padding-bottom" },
+                new Property { Name = "padding", ClassPrefix = "p-l", CssName = "padding-left" },
+                new Property { Name = "padding", ClassPrefix = "p-r", CssName = "padding-right" },
             }
         },
         {
             "borderRadius", new[]
             {
                 new Property { Name = "borderRadius", ClassPrefix = "rounded", CssName = "border-radius" },
-                new Property { Name = "borderRadiusStart", ClassPrefix = "rounded-s", CssName = "border-radius-start" },
-                new Property { Name = "borderRadiusStart", ClassPrefix = "rounded-s", CssName = "border-radius-start" },
+                new Property { Name = "borderRadius", ClassPrefix = "rounded-tl", CssName = "border-top-left-radius" },
+                new Property { Name = "borderRadius", ClassPrefix = "rounded-tr", CssName = "border-top-right-radius" },
+                new Property { Name = "borderRadius", ClassPrefix = "rounded-bl", CssName = "border-bottom-left-radius" },
+                new Property { Name = "borderRadius", ClassPrefix = "rounded-br", CssName = "border-bottom-right-radius" },
+            }
+        },
+        {
+            "borderWidth", new[]
+            {
+                new Property { Name = "borderWidth", ClassPrefix = "border", CssName = "border-width" },
+                new Property { Name = "borderWidth", ClassPrefix = "border-t", CssName = "border-top-width" },
+                new Property { Name = "borderWidth", ClassPrefix = "border-b", CssName = "border-bottom-width" },
+                new Property { Name = "borderWidth", ClassPrefix = "border-l", CssName = "border-left-width" },
+                new Property { Name = "borderWidth", ClassPrefix = "border-r", CssName = "border-right-width" },
             }
         }
     };
