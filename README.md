@@ -52,12 +52,9 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -66,7 +63,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+A Unity library that let user style Unity UI Toolkit elements using Tailwind CSS.
+This library let users create a file to customize the default classes from Tailwind CSS and add new ones. The library will then generate a stylesheet that can be used in Unity UI Toolkit.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,49 +83,25 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+You should have a Unity project with UI Toolkit installed.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/UrionBlade/unity-tailwindcss.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+1. Open the Unity Package Manager
+2. Press on the `+` button on the top left corner
+3. Select `Add package from git URL...`
+4. Insert `git@github.com:UrionBlade/unity-tailwindcss.git` and press `Add`
+5. Once the package is installed create a TailwindGeneratorSettings asset by right clicking in the project window and selecting `Create > Tailwind Generator Settings`
+6. From the generated asset inspector, click the button `Generate` to generate the stylesheet
+7. To provide a personal configuration just create a json file (with the same structure of the tailwind one) and put it in a folder inside your project. Then drag the folder in the `Tailwind Generator Settings` inspector. The generator will use the configuration file to generate the stylesheet.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
+<!-- ROADMAP
 ## Roadmap
 
 - [ ] Feature 1
@@ -138,8 +112,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 See the [open issues](https://github.com/UrionBlade/unity-tailwindcss/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+ -->
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -178,20 +151,7 @@ Project Link: [https://github.com/UrionBlade/unity-tailwindcss](https://github.c
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/UrionBlade/unity-tailwindcss.svg?style=for-the-badge
 [contributors-url]: https://github.com/UrionBlade/unity-tailwindcss/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/UrionBlade/unity-tailwindcss.svg?style=for-the-badge
